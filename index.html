@@ -22,7 +22,7 @@
     .eyebrow{display:flex;align-items:center;gap:10px;text-transform:uppercase;letter-spacing:.15em;font-size:12px;font-weight:700;color:var(--green2)}.eyebrow:before{content:'';height:2px;width:28px;background:#72a486}
     h1,h2,h3,p{margin-top:0}h1{font:600 clamp(42px,6vw,70px)/1.09 'Playfair Display',serif;letter-spacing:-.035em;margin:22px 0}.accent{color:var(--green2);font-style:italic}.lead{font-size:18px;color:#54645a;max-width:650px}
     .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border-radius:8px;font-size:14px;font-weight:700;border:1px solid var(--green);transition:.2s}.btn.primary{background:var(--green);color:white}.btn.secondary{color:var(--green);background:transparent}.btn:hover{transform:translateY(-2px);text-decoration:none}
-    .profile-card{position:relative;background:#e8f0e8;border-radius:22px;min-height:360px;padding:26px;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between}.profile-photo-card{gap:18px}.profile-photo{display:block;position:relative;z-index:1;width:100%;height:360px;object-fit:cover;object-position:center 25%;border-radius:14px;border:1px solid rgba(31,91,69,.14)}
+    .profile-card{position:relative;background:#e8f0e8;border-radius:22px;min-height:360px;padding:26px;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between}
     .profile-card:before,.profile-card:after{content:'';position:absolute;border:1px solid rgba(31,91,69,.2);border-radius:50%;width:290px;height:290px;right:-100px;top:-70px}.profile-card:after{width:220px;height:220px;right:-65px;top:-36px}
     .monogram{font:600 112px/.95 'Playfair Display',serif;color:var(--green);letter-spacing:-.08em;position:relative;z-index:1;margin:24px 0 10px}.card-label{position:relative;z-index:1;background:rgba(255,255,255,.66);border:1px solid rgba(31,91,69,.12);border-radius:12px;padding:16px}.card-label strong{display:block;font-size:15px}.card-label span{font-size:13px;color:var(--muted)}
     .mini-tag{font-size:11px;text-transform:uppercase;letter-spacing:.14em;color:var(--green);font-weight:700}
@@ -36,7 +36,7 @@
     .contact{background:var(--green);color:#fff;border-radius:20px;padding:44px;display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center}.contact h2{color:#fff;margin-bottom:10px}.contact p{color:#d8e7dc;margin:0;max-width:640px}.contact .btn{background:white;color:var(--green);border-color:white;white-space:nowrap}
     footer{padding:28px 0;color:var(--muted);font-size:12px}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
     .source-note{font-size:12px;color:var(--muted);margin-top:20px}
-    @media(max-width:800px){.hero{grid-template-columns:1fr;gap:34px;padding:60px 0}.profile-card{min-height:270px}.profile-photo{height:300px}.monogram{font-size:90px}.section-head{grid-template-columns:1fr;gap:14px}.about-grid{grid-template-columns:1fr}.timeline{grid-template-columns:1fr}.pub{grid-template-columns:48px 1fr}.pub>a{grid-column:2}.contact{grid-template-columns:1fr;padding:30px}.credentials{grid-template-columns:1fr}.experience-columns{grid-template-columns:1fr}.education-item{grid-template-columns:1fr;gap:8px}}
+    @media(max-width:800px){.hero{grid-template-columns:1fr;gap:34px;padding:60px 0}.profile-card{min-height:270px}.monogram{font-size:90px}.section-head{grid-template-columns:1fr;gap:14px}.about-grid{grid-template-columns:1fr}.timeline{grid-template-columns:1fr}.pub{grid-template-columns:48px 1fr}.pub>a{grid-column:2}.contact{grid-template-columns:1fr;padding:30px}.credentials{grid-template-columns:1fr}.experience-columns{grid-template-columns:1fr}.education-item{grid-template-columns:1fr;gap:8px}}
     @media(max-width:620px){.nav{height:66px}.menu{display:block}nav{display:none;position:absolute;top:65px;left:0;right:0;padding:18px 22px;background:var(--paper);border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;gap:16px}nav.open{display:flex}.wrap{width:min(100% - 32px,1120px)}.focus-list{grid-template-columns:1fr}.pub{gap:12px}.hero{padding-top:48px}section{padding:56px 0}}
   </style>
 </head>
@@ -56,9 +56,9 @@
       <p class="lead">I’m Mahaning Indrawaty Wijaya, an Information Systems educator and researcher at Bina Nusantara University. My work explores enterprise systems, business process improvement, and technology-enabled learning.</p>
       <div class="actions"><a class="btn primary" href="#publications">Explore my research <span aria-hidden="true">↗</span></a><a class="btn secondary" href="https://www.linkedin.com/in/mahaning-indrawaty-wijaya/" target="_blank" rel="noreferrer">LinkedIn ↗</a></div>
     </div>
-    <aside class="profile-card profile-photo-card" aria-label="Profile photo and summary">
+    <aside class="profile-card" aria-label="Profile summary">
       <span class="mini-tag">Information Systems · Indonesia</span>
-      <img class="profile-photo" src="assets/mahaning-profile.jpg" alt="Portrait of Mahaning Indrawaty Wijaya">
+      <div class="monogram" aria-hidden="true">MW.</div>
       <div class="card-label"><strong>Mahaning Indrawaty Wijaya</strong><span>School of Information Systems · BINUS University</span></div>
     </aside>
   </div>
