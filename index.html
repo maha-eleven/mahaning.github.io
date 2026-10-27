@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8faf7">
+  <meta name="description" content="Mahaning Indrawaty Wijaya — educator, researcher, and enterprise systems professional at BINUS University.">
+  <meta property="og:title" content="Mahaning Indrawaty Wijaya | Academic Profile">
+  <meta property="og:description" content="Information Systems • Enterprise Systems • Digital Transformation • Technology-Enhanced Learning">
+  <title>Mahaning Indrawaty Wijaya | Academic Profile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--green:#1f5b45;--green2:#2f765a;--mint:#e8f1e9;--paper:#f8faf7;--ink:#17241d;--muted:#68766d;--line:#dce5dd;--white:#fff}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:'DM Sans',sans-serif;line-height:1.7}
+    a{color:var(--green);text-decoration:none}a:hover{text-decoration:underline}.wrap{width:min(1120px,calc(100% - 44px));margin:auto}
+    header{position:sticky;top:0;z-index:10;background:rgba(248,250,247,.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(220,229,221,.8)}
+    .nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:700;color:var(--green);letter-spacing:.02em}.brand span{display:inline-grid;place-items:center;background:var(--green);color:#fff;border-radius:9px;width:34px;height:34px;margin-right:10px}
+    nav{display:flex;align-items:center;gap:26px;font-size:14px}nav a{color:#3e5146}.menu{display:none;background:none;border:1px solid var(--line);border-radius:8px;padding:7px 10px;color:var(--green)}
+    .hero{padding:94px 0 74px;display:grid;grid-template-columns:1.45fr .8fr;align-items:center;gap:70px}
+    .eyebrow{display:flex;align-items:center;gap:10px;text-transform:uppercase;letter-spacing:.15em;font-size:12px;font-weight:700;color:var(--green2)}.eyebrow:before{content:'';height:2px;width:28px;background:#72a486}
+    h1,h2,h3,p{margin-top:0}h1{font:600 clamp(42px,6vw,70px)/1.09 'Playfair Display',serif;letter-spacing:-.035em;margin:22px 0}.accent{color:var(--green2);font-style:italic}.lead{font-size:18px;color:#54645a;max-width:650px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border-radius:8px;font-size:14px;font-weight:700;border:1px solid var(--green);transition:.2s}.btn.primary{background:var(--green);color:white}.btn.secondary{color:var(--green);background:transparent}.btn:hover{transform:translateY(-2px);text-decoration:none}
+    .profile-card{position:relative;background:#e8f0e8;border-radius:22px;min-height:360px;padding:26px;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between}
+    .profile-card:before,.profile-card:after{content:'';position:absolute;border:1px solid rgba(31,91,69,.2);border-radius:50%;width:290px;height:290px;right:-100px;top:-70px}.profile-card:after{width:220px;height:220px;right:-65px;top:-36px}
+    .monogram{font:600 112px/.95 'Playfair Display',serif;color:var(--green);letter-spacing:-.08em;position:relative;z-index:1;margin:24px 0 10px}.card-label{position:relative;z-index:1;background:rgba(255,255,255,.66);border:1px solid rgba(31,91,69,.12);border-radius:12px;padding:16px}.card-label strong{display:block;font-size:15px}.card-label span{font-size:13px;color:var(--muted)}
+    .mini-tag{font-size:11px;text-transform:uppercase;letter-spacing:.14em;color:var(--green);font-weight:700}
+    section{padding:76px 0;border-top:1px solid var(--line)}.section-head{display:grid;grid-template-columns:.7fr 1.3fr;gap:42px;margin-bottom:34px}.section-no{font-size:12px;letter-spacing:.14em;color:var(--green2);font-weight:700;text-transform:uppercase}h2{font:600 clamp(30px,4vw,44px)/1.18 'Playfair Display',serif;letter-spacing:-.025em;margin:8px 0 0}.section-intro{color:#59685e;max-width:720px;margin:5px 0}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}.about-copy{font-size:16px;color:#4f5f55}.focus-list{display:grid;grid-template-columns:1fr 1fr;gap:12px}.focus{background:white;border:1px solid var(--line);border-radius:12px;padding:18px}.focus .num{font-size:12px;color:var(--green2);font-weight:700}.focus h3{font-size:16px;margin:8px 0 4px}.focus p{font-size:13px;color:var(--muted);margin:0}
+    .timeline{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.timeline article{padding:22px;background:white;border:1px solid var(--line);border-radius:13px}.timeline .date{font-size:12px;color:var(--green2);font-weight:700;text-transform:uppercase;letter-spacing:.1em}.timeline h3{font-size:17px;margin:10px 0 6px}.timeline p{font-size:14px;color:var(--muted);margin:0}
+    .pub-list{border-top:1px solid var(--line)}.pub{display:grid;grid-template-columns:76px 1fr auto;gap:20px;align-items:start;padding:22px 0;border-bottom:1px solid var(--line)}.year{font-size:13px;color:var(--green2);font-weight:700;padding-top:4px}.pub h3{font-size:17px;line-height:1.45;margin:0 0 5px}.pub p{font-size:13px;color:var(--muted);margin:0}.pub a{font-size:13px;font-weight:700;white-space:nowrap;padding-top:5px}
+    .credentials{display:grid;grid-template-columns:1fr 1fr;gap:18px}.credential{padding:22px;border:1px solid var(--line);border-radius:12px;background:#fff}.credential h3{margin:8px 0 4px;font-size:17px}.credential p{font-size:14px;color:var(--muted);margin:0}
+    .contact{background:var(--green);color:#fff;border-radius:20px;padding:44px;display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center}.contact h2{color:#fff;margin-bottom:10px}.contact p{color:#d8e7dc;margin:0;max-width:640px}.contact .btn{background:white;color:var(--green);border-color:white;white-space:nowrap}
+    footer{padding:28px 0;color:var(--muted);font-size:12px}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    .source-note{font-size:12px;color:var(--muted);margin-top:20px}
+    @media(max-width:800px){.hero{grid-template-columns:1fr;gap:34px;padding:60px 0}.profile-card{min-height:270px}.monogram{font-size:90px}.section-head{grid-template-columns:1fr;gap:14px}.about-grid{grid-template-columns:1fr}.timeline{grid-template-columns:1fr}.pub{grid-template-columns:48px 1fr}.pub>a{grid-column:2}.contact{grid-template-columns:1fr;padding:30px}.credentials{grid-template-columns:1fr}}
+    @media(max-width:620px){.nav{height:66px}.menu{display:block}nav{display:none;position:absolute;top:65px;left:0;right:0;padding:18px 22px;background:var(--paper);border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;gap:16px}nav.open{display:flex}.wrap{width:min(100% - 32px,1120px)}.focus-list{grid-template-columns:1fr}.pub{gap:12px}.hero{padding-top:48px}section{padding:56px 0}}
+  </style>
+</head>
+<body>
+<header><div class="wrap nav">
+  <a class="brand" href="#home"><span>MW</span>Mahaning Wijaya</a>
+  <button class="menu" id="menuBtn" aria-expanded="false" aria-controls="mainNav">Menu ☰</button>
+  <nav id="mainNav" aria-label="Main navigation">
+    <a href="#about">About</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+  </nav>
+</div></header>
+<main id="home">
+  <div class="wrap hero">
+    <div>
+      <div class="eyebrow">Educator · Researcher · Consultant</div>
+      <h1>Connecting people, processes, and technology <span class="accent">with purpose.</span></h1>
+      <p class="lead">I’m Mahaning Indrawaty Wijaya, an Information Systems educator and researcher at Bina Nusantara University. My work explores enterprise systems, business process improvement, and technology-enabled learning.</p>
+      <div class="actions"><a class="btn primary" href="#publications">Explore my research <span aria-hidden="true">↗</span></a><a class="btn secondary" href="https://www.linkedin.com/in/mahaning-indrawaty-wijaya/" target="_blank" rel="noreferrer">LinkedIn ↗</a></div>
+    </div>
+    <aside class="profile-card" aria-label="Profile summary">
+      <span class="mini-tag">Information Systems · Indonesia</span>
+      <div class="monogram" aria-hidden="true">MW.</div>
+      <div class="card-label"><strong>Mahaning Indrawaty Wijaya</strong><span>School of Information Systems · BINUS University</span></div>
+    </aside>
+  </div>
+  <section id="about"><div class="wrap">
+    <div class="section-head"><div><div class="section-no">01 / About</div><h2>Academic work with a practical lens.</h2></div>
+      <div><p class="section-intro">I work across teaching, research, and professional practice in Information Systems. I’m particularly interested in how organizations adopt enterprise technologies, improve processes, and translate digital capabilities into useful outcomes.</p></div>
+    </div>
+    <div class="about-grid">
+      <div class="about-copy">
+        <p>At BINUS University’s School of Information Systems, my teaching and academic work span Enterprise Resource Planning (ERP), Information Systems Analysis and Design, Business Process Management, Knowledge Management, and Robotic Process Automation.</p>
+        <p>My professional experience also includes enterprise resource planning consulting at Accenture, curriculum and learning-content development, and training in digital and business technologies.</p>
+        <p>I hold a Master of Commerce, specializing in Enterprise System and Business Design, from UNSW, supported by an LPDP scholarship, and an undergraduate degree in Business Management of Telecommunication and Informatics from Telkom University.</p>
+      </div>
+      <div class="focus-list">
+        <article class="focus"><div class="num">01</div><h3>Enterprise Systems</h3><p>ERP, enterprise architecture, and system integration.</p></article>
+        <article class="focus"><div class="num">02</div><h3>Business Processes</h3><p>Process management, automation, and evaluation.</p></article>
+        <article class="focus"><div class="num">03</div><h3>Digital Transformation</h3><p>Technology adoption, governance, and organizational change.</p></article>
+        <article class="focus"><div class="num">04</div><h3>Technology-Enhanced Learning</h3><p>ERP pedagogy, learning design, and curriculum development.</p></article>
+      </div>
+    </div>
+  </div></section>
+  <section id="research"><div class="wrap">
+    <div class="section-head"><div><div class="section-no">02 / Research</div><h2>Questions that connect systems and people.</h2></div><div><p class="section-intro">My research interests sit at the intersection of digital technologies, business processes, and learning practices. I’m interested in the implementation of technology—not only what a system can do, but how it is adopted, taught, governed, and evaluated.</p></div></div>
+    <div class="timeline">
+      <article><div class="date">Research area 01</div><h3>ERP & Enterprise Architecture</h3><p>Enterprise system adoption, ERP education, cloud adoption strategy, and integration across business functions.</p></article>
+      <article><div class="date">Research area 02</div><h3>Automation & Process Improvement</h3><p>Robotic process automation, business process management, and evidence-based evaluation of digital workflows.</p></article>
+      <article><div class="date">Research area 03</div><h3>Governance & Digital Capability</h3><p>IT governance, digital transformation, knowledge management, and practical approaches for organizational contexts.</p></article>
+    </div>
+  </div></section>
+  <section id="publications"><div class="wrap">
+    <div class="section-head"><div><div class="section-no">03 / Selected publications</div><h2>Research and writing.</h2></div><div><p class="section-intro">A selection of publications and scholarly work. Follow the publisher or academic-index links for full details and citation information.</p></div></div>
+    <div class="pub-list">
+      <article class="pub"><div class="year">2025</div><div><h3>Empirical Study of Robotic Process Automation: Implementation and Evaluation</h3><p>Human Behavior and Emerging Technologies · Co-authored research on implementing and evaluating RPA in a higher-education service process.</p></div><a href="https://doi.org/10.1155/hbe2/2876164" target="_blank" rel="noreferrer">Read paper ↗</a></article>
+      <article class="pub"><div class="year">2023</div><div><h3>A decade of ERP teaching practice: A systematic literature review</h3><p>Education and Information Technologies · A review of ERP pedagogy and approaches to teaching enterprise systems.</p></div><a href="https://doi.org/10.1007/s10639-023-11753-1" target="_blank" rel="noreferrer">Read paper ↗</a></article>
+      <article class="pub"><div class="year">2022</div><div><h3>Leveraging COBIT 2019 to Implement IT Governance in SME Context: A Case Study of Higher Education in Campus A</h3><p>Research on applying an IT governance framework in an organizational case study.</p></div><a href="https://sinta.kemdiktisaintek.go.id/authors/profile/6726743/?view=scopus" target="_blank" rel="noreferrer">Find record ↗</a></article>
+      <article class="pub"><div class="year">2020</div><div><h3>Tailoring TOGAF for Cloud Adoption Strategy</h3><p>Conference publication on adapting enterprise architecture practices for cloud adoption.</p></div><a href="https://scholar.google.com/scholar?q=Tailoring+TOGAF+for+Cloud+Adoption+Strategy" target="_blank" rel="noreferrer">Find paper ↗</a></article>
+      <article class="pub"><div class="year">2023</div><div><h3>Robotic Process Automation to Improve Education’s Administration Process: Case of Students’ Internship Reporting</h3><p>Conference work exploring automation in an educational administration process.</p></div><a href="https://www.researchgate.net/publication/374786889_Robotic_Process_Automation_to_Improve_Education's_Administration_Process_Case_of_Students'_Internship_Reporting" target="_blank" rel="noreferrer">Read record ↗</a></article>
+    </div>
+    <p class="source-note">For a fuller publication list, see my <a href="https://sinta.kemdiktisaintek.go.id/authors/profile/6726743/" target="_blank" rel="noreferrer">SINTA profile</a> and <a href="https://www.researchgate.net/profile/Mahaning-Wijaya" target="_blank" rel="noreferrer">ResearchGate profile</a>.</p>
+  </div></section>
+  <section id="experience"><div class="wrap">
+    <div class="section-head"><div><div class="section-no">04 / Experience & education</div><h2>From enterprise practice to the classroom.</h2></div><div><p class="section-intro">A career spanning higher education, enterprise technology consulting, and the development of learning experiences and curriculum.</p></div></div>
+    <div class="timeline">
+      <article><div class="date">2019 — Present</div><h3>BINUS University</h3><p>Teaching and research in the School of Information Systems, alongside subject and content development for university learning.</p></article>
+      <article><div class="date">2017 — 2020</div><h3>Accenture</h3><p>Senior ERP consulting experience supporting enterprise system design and implementation, including finance-related processes.</p></article>
+      <article><div class="date">Education</div><h3>UNSW · Telkom University</h3><p>Master of Commerce in Enterprise System and Business Design (UNSW); undergraduate degree in Business Management of Telecommunication and Informatics (Telkom University).</p></article>
+    </div>
+    <div class="credentials" style="margin-top:18px">
+      <article class="credential"><div class="mini-tag">Academic profile</div><h3>SINTA · Science and Technology Index</h3><p>Publications, author profile, and research topics.</p><a href="https://sinta.kemdiktisaintek.go.id/authors/profile/6726743/" target="_blank" rel="noreferrer">View SINTA profile ↗</a></article>
+      <article class="credential"><div class="mini-tag">Research identity</div><h3>ORCID</h3><p>Persistent researcher identifier and scholarly record.</p><a href="https://orcid.org/0000-0001-8217-7499" target="_blank" rel="noreferrer">View ORCID profile ↗</a></article>
+    </div>
+  </div></section>
+  <section id="contact"><div class="wrap"><div class="contact">
+    <div><div class="section-no" style="color:#b9d9c5">05 / Contact</div><h2>Let’s connect.</h2><p>For academic collaboration, research discussions, teaching and curriculum development, or professional engagement, please reach out through my professional profiles.</p></div>
+    <div class="actions" style="margin:0"><a class="btn" href="https://www.linkedin.com/in/mahaning-indrawaty-wijaya/" target="_blank" rel="noreferrer">Connect on LinkedIn ↗</a><a class="btn" href="mailto:mahaning.wijaya@binus.ac.id">Email ↗</a></div>
+  </div></div></section>
+</main>
+<footer><div class="wrap foot"><span>© <span id="year"></span> Mahaning Indrawaty Wijaya</span><span>Designed with care · Minimal green & white</span><span><a href="#home">Back to top ↑</a></span></div></footer>
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const nav = document.getElementById('mainNav');
+  menuBtn.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', String(open));
+  });
+  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    nav.classList.remove('open'); menuBtn.setAttribute('aria-expanded','false');
+  }));
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
