@@ -31,12 +31,13 @@
     .timeline{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.timeline article{padding:22px;background:white;border:1px solid var(--line);border-radius:13px}.timeline .date{font-size:12px;color:var(--green2);font-weight:700;text-transform:uppercase;letter-spacing:.1em}.timeline h3{font-size:17px;margin:10px 0 6px}.timeline p{font-size:14px;color:var(--muted);margin:0}
     .pub-list{border-top:1px solid var(--line)}.pub{display:grid;grid-template-columns:76px 1fr auto;gap:20px;align-items:start;padding:22px 0;border-bottom:1px solid var(--line)}.year{font-size:13px;color:var(--green2);font-weight:700;padding-top:4px}.pub h3{font-size:17px;line-height:1.45;margin:0 0 5px}.pub p{font-size:13px;color:var(--muted);margin:0}.pub a{font-size:13px;font-weight:700;white-space:nowrap;padding-top:5px}
     .credentials{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.skill-card{background:#fff;border:1px solid var(--line);border-radius:13px;padding:22px}.skill-icon{display:grid;place-items:center;width:34px;height:34px;border-radius:9px;background:var(--mint);color:var(--green);font-size:12px;font-weight:700}.skill-card h3{font-size:17px;margin:14px 0 7px}.skill-card p{font-size:14px;color:var(--muted);margin:0 0 12px}.skill-credential{display:inline-block;color:var(--green);font-size:12px;font-weight:700;line-height:1.5}.languages-panel{margin-top:24px;padding:26px;background:#e8f1e9;border-radius:14px;display:grid;grid-template-columns:1fr 1.2fr;gap:24px;align-items:center}.languages-panel h3{font:600 25px/1.2 'Playfair Display',serif;margin:8px 0 0}.language-list{display:grid;gap:0}.language-item{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid #cbdccf}.language-item:last-child{border-bottom:0}.language-level{color:var(--green);font-size:13px;font-weight:700}
     .experience-list{display:grid;gap:18px}.experience-item{background:#fff;border:1px solid var(--line);border-radius:14px;padding:26px}.experience-meta{display:flex;justify-content:space-between;gap:16px;align-items:center;flex-wrap:wrap}.experience-item h3{font-size:21px;line-height:1.4;margin:12px 0 8px}.experience-item h3 span{font-weight:500;color:var(--muted)}.experience-summary{color:#526257;margin-bottom:18px}.experience-columns{display:grid;grid-template-columns:1fr 1fr;gap:26px}.experience-columns h4{margin:0 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:.1em;color:var(--green)}.experience-columns ul{margin:0;padding-left:18px;color:#59685e;font-size:14px}.experience-columns li{margin:0 0 8px}
     .education-list{border-top:1px solid var(--line)}.education-item{display:grid;grid-template-columns:220px 1fr;gap:24px;padding:25px 0;border-bottom:1px solid var(--line)}.education-level{font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:var(--green2);font-weight:700}.education-item h3{font-size:19px;margin:0 0 5px}.education-item p{margin:0 0 8px;color:#59685e;font-size:14px}.education-item .institution{color:var(--ink);font-weight:600}.credential{padding:22px;border:1px solid var(--line);border-radius:12px;background:#fff}.credential h3{margin:8px 0 4px;font-size:17px}.credential p{font-size:14px;color:var(--muted);margin:0}
     .contact{background:var(--green);color:#fff;border-radius:20px;padding:44px;display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center}.contact h2{color:#fff;margin-bottom:10px}.contact p{color:#d8e7dc;margin:0;max-width:640px}.contact .btn{background:white;color:var(--green);border-color:white;white-space:nowrap}
     footer{padding:28px 0;color:var(--muted);font-size:12px}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
     .source-note{font-size:12px;color:var(--muted);margin-top:20px}
-    @media(max-width:800px){.hero{grid-template-columns:1fr;gap:34px;padding:60px 0}.profile-card{min-height:270px}.profile-photo{height:300px}.monogram{font-size:90px}.section-head{grid-template-columns:1fr;gap:14px}.about-grid{grid-template-columns:1fr}.timeline{grid-template-columns:1fr}.pub{grid-template-columns:48px 1fr}.pub>a{grid-column:2}.contact{grid-template-columns:1fr;padding:30px}.credentials{grid-template-columns:1fr}.experience-columns{grid-template-columns:1fr}.education-item{grid-template-columns:1fr;gap:8px}}
+    @media(max-width:800px){.hero{grid-template-columns:1fr;gap:34px;padding:60px 0}.profile-card{min-height:270px}.profile-photo{height:300px}.monogram{font-size:90px}.section-head{grid-template-columns:1fr;gap:14px}.about-grid{grid-template-columns:1fr}.timeline{grid-template-columns:1fr}.pub{grid-template-columns:48px 1fr}.pub>a{grid-column:2}.contact{grid-template-columns:1fr;padding:30px}.credentials{grid-template-columns:1fr}.skills-grid{grid-template-columns:1fr 1fr}.languages-panel{grid-template-columns:1fr}.experience-columns{grid-template-columns:1fr}.education-item{grid-template-columns:1fr;gap:8px}}
     @media(max-width:620px){.nav{height:66px}.menu{display:block}nav{display:none;position:absolute;top:65px;left:0;right:0;padding:18px 22px;background:var(--paper);border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;gap:16px}nav.open{display:flex}.wrap{width:min(100% - 32px,1120px)}.focus-list{grid-template-columns:1fr}.pub{gap:12px}.hero{padding-top:48px}section{padding:56px 0}}
   </style>
 </head>
@@ -45,7 +46,7 @@
   <a class="brand" href="#home"><span>MW</span>Mahaning Wijaya</a>
   <button class="menu" id="menuBtn" aria-expanded="false" aria-controls="mainNav">Menu ☰</button>
   <nav id="mainNav" aria-label="Main navigation">
-    <a href="#about">About</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#contact">Contact</a>
+    <a href="#about">About</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#skills">Skills & Languages</a><a href="#contact">Contact</a>
   </nav>
 </div></header>
 <main id="home">
@@ -158,8 +159,28 @@
     </div>
     <p class="source-note">The undergraduate dates reflect publicly available profile information. The SMA graduation year is not listed.</p>
   </div></section>
+  <section id="skills"><div class="wrap">
+    <div class="section-head"><div><div class="section-no">06 / Skills & languages</div><h2>Capabilities built across business and technology.</h2></div><div><p class="section-intro">A blend of enterprise systems expertise, analytical practice, process improvement, governance, and learning design.</p></div></div>
+    <div class="skills-grid">
+      <article class="skill-card"><div class="skill-icon">01</div><h3>ERP & Enterprise Systems</h3><p>SAP and Odoo; Finance, Controlling, Project System, and general ERP processes.</p><span class="skill-credential">SAP Certified</span></article>
+      <article class="skill-card"><div class="skill-icon">02</div><h3>Data Analysis</h3><p>Data analysis, spreadsheet modelling, reporting, and performance measurement.</p><span class="skill-credential">Excel Expert Certified · Certified Data Analysis Professional, The KPI Institute</span></article>
+      <article class="skill-card"><div class="skill-icon">03</div><h3>Business Process Management</h3><p>Process analysis, process improvement, workflow design, and automation opportunities.</p></article>
+      <article class="skill-card"><div class="skill-icon">04</div><h3>Project Management</h3><p>Project coordination, stakeholder engagement, delivery planning, and implementation support.</p></article>
+      <article class="skill-card"><div class="skill-icon">05</div><h3>IT Governance</h3><p>Governance frameworks, controls, and alignment between technology and business needs.</p></article>
+      <article class="skill-card"><div class="skill-icon">06</div><h3>Curriculum & Learning Design</h3><p>Curriculum development, learning outcomes, course content, and learning experience design.</p></article>
+      <article class="skill-card"><div class="skill-icon">07</div><h3>Teaching & Pedagogy</h3><p>Higher-education teaching, learner-centred activities, assessment, and technology-enhanced learning.</p></article>
+    </div>
+    <div class="languages-panel">
+      <div><div class="section-no">Languages</div><h3>Communication across contexts.</h3></div>
+      <div class="language-list">
+        <div class="language-item"><span>Bahasa Indonesia</span><span class="language-level">Native</span></div>
+        <div class="language-item"><span>English</span><span class="language-level">Working professional</span></div>
+        <div class="language-item"><span>Japanese</span><span class="language-level">Basic</span></div>
+      </div>
+    </div>
+  </div></section>
   <section id="credentials"><div class="wrap">
-    <div class="section-head"><div><div class="section-no">06 / Academic profiles</div><h2>Research identity & credentials.</h2></div><div><p class="section-intro">Explore my scholarly record and professional background through the original public profiles.</p></div></div>
+    <div class="section-head"><div><div class="section-no">07 / Academic profiles</div><h2>Research identity & credentials.</h2></div><div><p class="section-intro">Explore my scholarly record and professional background through the original public profiles.</p></div></div>
     <div class="credentials">
       <article class="credential"><div class="mini-tag">Academic profile</div><h3>SINTA · Science and Technology Index</h3><p>Publications, author profile, and research topics.</p><a href="https://sinta.kemdiktisaintek.go.id/authors/profile/6726743/" target="_blank" rel="noreferrer">View SINTA profile ↗</a></article>
       <article class="credential"><div class="mini-tag">Research identity</div><h3>ORCID</h3><p>Persistent researcher identifier and scholarly record.</p><a href="https://orcid.org/0000-0001-8217-7499" target="_blank" rel="noreferrer">View ORCID profile ↗</a></article>
