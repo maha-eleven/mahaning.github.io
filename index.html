@@ -30,11 +30,13 @@
     .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}.about-copy{font-size:16px;color:#4f5f55}.focus-list{display:grid;grid-template-columns:1fr 1fr;gap:12px}.focus{background:white;border:1px solid var(--line);border-radius:12px;padding:18px}.focus .num{font-size:12px;color:var(--green2);font-weight:700}.focus h3{font-size:16px;margin:8px 0 4px}.focus p{font-size:13px;color:var(--muted);margin:0}
     .timeline{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.timeline article{padding:22px;background:white;border:1px solid var(--line);border-radius:13px}.timeline .date{font-size:12px;color:var(--green2);font-weight:700;text-transform:uppercase;letter-spacing:.1em}.timeline h3{font-size:17px;margin:10px 0 6px}.timeline p{font-size:14px;color:var(--muted);margin:0}
     .pub-list{border-top:1px solid var(--line)}.pub{display:grid;grid-template-columns:76px 1fr auto;gap:20px;align-items:start;padding:22px 0;border-bottom:1px solid var(--line)}.year{font-size:13px;color:var(--green2);font-weight:700;padding-top:4px}.pub h3{font-size:17px;line-height:1.45;margin:0 0 5px}.pub p{font-size:13px;color:var(--muted);margin:0}.pub a{font-size:13px;font-weight:700;white-space:nowrap;padding-top:5px}
-    .credentials{display:grid;grid-template-columns:1fr 1fr;gap:18px}.credential{padding:22px;border:1px solid var(--line);border-radius:12px;background:#fff}.credential h3{margin:8px 0 4px;font-size:17px}.credential p{font-size:14px;color:var(--muted);margin:0}
+    .credentials{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .experience-list{display:grid;gap:18px}.experience-item{background:#fff;border:1px solid var(--line);border-radius:14px;padding:26px}.experience-meta{display:flex;justify-content:space-between;gap:16px;align-items:center;flex-wrap:wrap}.experience-item h3{font-size:21px;line-height:1.4;margin:12px 0 8px}.experience-item h3 span{font-weight:500;color:var(--muted)}.experience-summary{color:#526257;margin-bottom:18px}.experience-columns{display:grid;grid-template-columns:1fr 1fr;gap:26px}.experience-columns h4{margin:0 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:.1em;color:var(--green)}.experience-columns ul{margin:0;padding-left:18px;color:#59685e;font-size:14px}.experience-columns li{margin:0 0 8px}
+    .education-list{border-top:1px solid var(--line)}.education-item{display:grid;grid-template-columns:220px 1fr;gap:24px;padding:25px 0;border-bottom:1px solid var(--line)}.education-level{font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:var(--green2);font-weight:700}.education-item h3{font-size:19px;margin:0 0 5px}.education-item p{margin:0 0 8px;color:#59685e;font-size:14px}.education-item .institution{color:var(--ink);font-weight:600}.credential{padding:22px;border:1px solid var(--line);border-radius:12px;background:#fff}.credential h3{margin:8px 0 4px;font-size:17px}.credential p{font-size:14px;color:var(--muted);margin:0}
     .contact{background:var(--green);color:#fff;border-radius:20px;padding:44px;display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center}.contact h2{color:#fff;margin-bottom:10px}.contact p{color:#d8e7dc;margin:0;max-width:640px}.contact .btn{background:white;color:var(--green);border-color:white;white-space:nowrap}
     footer{padding:28px 0;color:var(--muted);font-size:12px}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
     .source-note{font-size:12px;color:var(--muted);margin-top:20px}
-    @media(max-width:800px){.hero{grid-template-columns:1fr;gap:34px;padding:60px 0}.profile-card{min-height:270px}.monogram{font-size:90px}.section-head{grid-template-columns:1fr;gap:14px}.about-grid{grid-template-columns:1fr}.timeline{grid-template-columns:1fr}.pub{grid-template-columns:48px 1fr}.pub>a{grid-column:2}.contact{grid-template-columns:1fr;padding:30px}.credentials{grid-template-columns:1fr}}
+    @media(max-width:800px){.hero{grid-template-columns:1fr;gap:34px;padding:60px 0}.profile-card{min-height:270px}.monogram{font-size:90px}.section-head{grid-template-columns:1fr;gap:14px}.about-grid{grid-template-columns:1fr}.timeline{grid-template-columns:1fr}.pub{grid-template-columns:48px 1fr}.pub>a{grid-column:2}.contact{grid-template-columns:1fr;padding:30px}.credentials{grid-template-columns:1fr}.experience-columns{grid-template-columns:1fr}.education-item{grid-template-columns:1fr;gap:8px}}
     @media(max-width:620px){.nav{height:66px}.menu{display:block}nav{display:none;position:absolute;top:65px;left:0;right:0;padding:18px 22px;background:var(--paper);border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;gap:16px}nav.open{display:flex}.wrap{width:min(100% - 32px,1120px)}.focus-list{grid-template-columns:1fr}.pub{gap:12px}.hero{padding-top:48px}section{padding:56px 0}}
   </style>
 </head>
@@ -43,7 +45,7 @@
   <a class="brand" href="#home"><span>MW</span>Mahaning Wijaya</a>
   <button class="menu" id="menuBtn" aria-expanded="false" aria-controls="mainNav">Menu ☰</button>
   <nav id="mainNav" aria-label="Main navigation">
-    <a href="#about">About</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+    <a href="#about">About</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#contact">Contact</a>
   </nav>
 </div></header>
 <main id="home">
@@ -98,13 +100,67 @@
     <p class="source-note">For a fuller publication list, see my <a href="https://sinta.kemdiktisaintek.go.id/authors/profile/6726743/" target="_blank" rel="noreferrer">SINTA profile</a> and <a href="https://www.researchgate.net/profile/Mahaning-Wijaya" target="_blank" rel="noreferrer">ResearchGate profile</a>.</p>
   </div></section>
   <section id="experience"><div class="wrap">
-    <div class="section-head"><div><div class="section-no">04 / Experience & education</div><h2>From enterprise practice to the classroom.</h2></div><div><p class="section-intro">A career spanning higher education, enterprise technology consulting, and the development of learning experiences and curriculum.</p></div></div>
-    <div class="timeline">
-      <article><div class="date">Sep 2019 — Present</div><h3>Associate Professor · BINUS University</h3><p>Teaching and research in the School of Information Systems, including ERP, Systems Analysis and Design, Business Process Management, Knowledge Management, and RPA.</p></article>
-      <article><div class="date">Sep 2022 — Present</div><h3>Subject Content Specialist · BINUS University</h3><p>Developing curriculum, teaching and learning strategies, and course materials as a subject matter expert in Enterprise Information Systems.</p></article>
-      <article><div class="date">Education & professional practice</div><h3>UNSW · Telkom University · Accenture</h3><p>Master of Commerce in Enterprise System and Business Design from UNSW; undergraduate degree from Telkom University; professional experience in technology consulting at Accenture.</p></article>
+    <div class="section-head"><div><div class="section-no">04 / Experience</div><h2>From enterprise transformation to learning and development.</h2></div><div><p class="section-intro">A cross-sector career spanning enterprise technology consulting, digital learning research, professional training, and higher education.</p></div></div>
+    <div class="experience-list">
+      <article class="experience-item">
+        <div class="experience-meta"><span class="date">Feb 2017 — Mar 2020</span><span class="mini-tag">Enterprise consulting</span></div>
+        <h3>Senior Enterprise Resource Planning Consultant <span>· Accenture</span></h3>
+        <p class="experience-summary">Designed and supported enterprise systems for a major national renewable energy company, with a focus on integrated finance processes and business analysis.</p>
+        <div class="experience-columns">
+          <div><h4>Responsibilities</h4><ul><li>Designed and implemented enterprise system solutions aligned with client business processes.</li><li>Worked with finance, change management, and technical teams to deliver implementation services.</li><li>Supported integration of financial transactions and reporting to improve process visibility.</li></ul></div>
+          <div><h4>Key contributions</h4><ul><li>Contributed to integrated finance workflows and business-process improvements.</li><li>Helped coordinate cross-functional delivery between finance, change, and technical stakeholders.</li><li>Supported the client in translating business needs into ERP solution design.</li></ul></div>
+        </div>
+      </article>
+      <article class="experience-item">
+        <div class="experience-meta"><span class="date">Oct 2024 — Feb 2025</span><span class="mini-tag">Digital learning · Development</span></div>
+        <h3>Online Learning Consultant <span>· All In for Development / USAID project</span></h3>
+        <p class="experience-summary">Contributed to market landscape research for online learning across ASEAN, engaging stakeholders such as policymakers, implementers, and learning communities.</p>
+        <div class="experience-columns">
+          <div><h4>Responsibilities</h4><ul><li>Conducted key informant interviews and synthesised insights from stakeholders across ASEAN.</li><li>Analysed training needs to inform curriculum, pedagogy, and content for online learning.</li><li>Contributed to functional and non-functional requirements for an online learning platform, with attention to usability and quality.</li></ul></div>
+          <div><h4>Key contributions</h4><ul><li>Helped translate stakeholder needs into learning-design and platform requirements.</li><li>Contributed research and recommendations to support online learning design and platform improvement.</li><li>Worked collaboratively with consultants to connect market research, training needs, and digital learning requirements.</li></ul></div>
+        </div>
+      </article>
+      <article class="experience-item">
+        <div class="experience-meta"><span class="date">Sep 2019 — Present</span><span class="mini-tag">Higher education</span></div>
+        <h3>Associate Professor <span>· BINUS University, School of Information Systems</span></h3>
+        <p class="experience-summary">Teaching and researching in Information Systems with an emphasis on enterprise applications and how organisations use technology to improve processes.</p>
+        <div class="experience-columns">
+          <div><h4>Responsibilities</h4><ul><li>Teach Enterprise Resource Planning, Information Systems Analysis and Design, Business Process Management, Knowledge Management, and Robotic Process Automation.</li><li>Conduct research and contribute to scholarly writing, peer review, and academic activities.</li><li>Guide students in connecting information systems concepts with practical business scenarios.</li></ul></div>
+          <div><h4>Key contributions</h4><ul><li>Published research on ERP education, RPA implementation, IT governance, and enterprise systems.</li><li>Bring enterprise consulting and implementation perspectives into teaching and learning.</li><li>Support students in developing practical understanding of business processes and enterprise technologies.</li></ul></div>
+        </div>
+      </article>
+      <article class="experience-item">
+        <div class="experience-meta"><span class="date">Sep 2022 — Present</span><span class="mini-tag">Curriculum & learning design</span></div>
+        <h3>Subject Content Specialist <span>· BINUS University</span></h3>
+        <p class="experience-summary">Act as a subject matter expert to develop curriculum, teaching and learning strategies, and learning content for university courses.</p>
+        <div class="experience-columns">
+          <div><h4>Responsibilities</h4><ul><li>Develop course materials and content for use in university learning.</li><li>Contribute to curriculum planning, teaching strategies, and learning activities.</li><li>Align subject content with learning outcomes and student learning needs.</li></ul></div>
+          <div><h4>Key contributions</h4><ul><li>Support consistent, structured subject content across course delivery.</li><li>Translate specialist knowledge in enterprise information systems into teaching materials.</li><li>Help design learning experiences that connect theoretical concepts with professional practice.</li></ul></div>
+        </div>
+      </article>
+      <article class="experience-item">
+        <div class="experience-meta"><span class="date">Various engagements</span><span class="mini-tag">Professional trainer</span></div>
+        <h3>Trainer, Mentor & Learning Facilitator <span>· Various programmes</span></h3>
+        <p class="experience-summary">Deliver and facilitate learning programmes for university students and professionals across digital productivity, business applications, and technology adoption.</p>
+        <div class="experience-columns">
+          <div><h4>Selected responsibilities</h4><ul><li><strong>Microsoft × Kampus Merdeka / MariBelajar:</strong> trained and mentored students in Microsoft Office, Microsoft 365, Power Platform, Dynamics 365 ERP, and CRM; assessed capability and supported certification preparation.</li><li><strong>PINTAR professional training:</strong> facilitated discussion with tourism-sector leaders on using digital technology to strengthen service quality and competitiveness.</li><li>Adapt learning activities, demonstrations, and feedback to participant needs and experience levels.</li></ul></div>
+          <div><h4>Key contributions</h4><ul><li>Helped learners build practical familiarity with business and productivity technologies.</li><li>Connected digital tools to workplace and sector-specific use cases.</li><li>Supported learner progress through mentoring, assessment, and certification-oriented preparation.</li></ul></div>
+        </div>
+      </article>
     </div>
-    <div class="credentials" style="margin-top:18px">
+  </div></section>
+  <section id="education"><div class="wrap">
+    <div class="section-head"><div><div class="section-no">05 / Education</div><h2>Learning that shaped my practice.</h2></div><div><p class="section-intro">An academic foundation in business and information systems, followed by postgraduate specialisation in enterprise systems and business design.</p></div></div>
+    <div class="education-list">
+      <article class="education-item"><div class="education-level">Master’s degree · 2015–2016</div><div><h3>Master of Commerce — Enterprise System and Business Design</h3><p class="institution">The University of New South Wales (UNSW), Australia</p><p>Specialised in enterprise systems, business intelligence, and business process management. Awarded an LPDP scholarship from Indonesia’s Ministry of Finance.</p></div></article>
+      <article class="education-item"><div class="education-level">Bachelor’s degree · 2010–2014*</div><div><h3>Bachelor’s Degree in Business Management of Telecommunication and Informatics</h3><p class="institution">Telkom University, Indonesia</p><p>Graduated with honours (Cum Laude); LinkedIn profile lists a GPA of 3.76/4.00.</p></div></article>
+      <article class="education-item"><div class="education-level">Secondary education</div><div><h3>Senior High School (SMA)</h3><p class="institution">School details not listed publicly</p><p>Please share the name of your SMA and graduation year so this entry can be completed accurately.</p></div></article>
+    </div>
+    <p class="source-note">*The undergraduate period is shown approximately based on the public profile and should be confirmed. Secondary-school details have not been added without a verified source.</p>
+  </div></section>
+  <section id="credentials"><div class="wrap">
+    <div class="section-head"><div><div class="section-no">06 / Academic profiles</div><h2>Research identity & credentials.</h2></div><div><p class="section-intro">Explore my scholarly record and professional background through the original public profiles.</p></div></div>
+    <div class="credentials">
       <article class="credential"><div class="mini-tag">Academic profile</div><h3>SINTA · Science and Technology Index</h3><p>Publications, author profile, and research topics.</p><a href="https://sinta.kemdiktisaintek.go.id/authors/profile/6726743/" target="_blank" rel="noreferrer">View SINTA profile ↗</a></article>
       <article class="credential"><div class="mini-tag">Research identity</div><h3>ORCID</h3><p>Persistent researcher identifier and scholarly record.</p><a href="https://orcid.org/0000-0001-8217-7499" target="_blank" rel="noreferrer">View ORCID profile ↗</a></article>
     </div>
